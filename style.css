@@ -12,11 +12,9 @@ body {
 }
 
 .header-title {
-    margin-left: 25px;
     font-family: times new roman;
     font-style: italic;
     font-weight: bold;
-    color: #bbb;
 }
 
 .glyphicon-grain {
@@ -38,7 +36,7 @@ body {
 .img {
     margin: auto;
     height: 500px;
-    width: 900px;
+    width: 100%;
 }
 
 #first-slide {
@@ -59,13 +57,25 @@ body {
     margin-top: -50px;
 }
 
-.title {
+.title, .title1, .title2 {
     position: absolute;
-    margin-left: 65%;
-    margin-top: 400px;
+    width: 425px;
+    margin-left: 55%;
+    margin-top: 300px;
     font-family: times new roman;
     font-style: italic;
     font-weight: bold;
+}
+
+.title1 {
+    margin-left: 32%;
+    margin-top: 160px;
+}
+
+.title2 {
+    margin-left: 50px;
+    margin-top: 275px;
+    width: 400px;
 }
 
 .left-col, .middle-col, .right-col {
@@ -90,22 +100,63 @@ ul li {
     }
 }
 
-.alcatraz {
-    height: 200px;
+
+.image, .pic {
+    height: 250px;
     width: 300px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+}
+
+.pic:hover {
+    background-color: black;
+}
+
+.pic:hover img {
+    opacity: 0.8;
 }
 
 .caption {
-    font-weight: bold;
-    font-size: 16px;
-    color: white;
-    margin-top: -25px;
     display: none;
+    color: white;
+    margin-top: -130px;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    opacity: 1;
 }
 
-.overlay {
-    background:rgba(0,0,0,.75);
-    opacity:0;
-    -webkit-transition: opacity .25s ease;
-    -moz-transition: opacity .25s ease;
+.middle-text {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+@media (max-width: 940px) {
+        .title {
+            margin-left: 50%;
+            margin-top: 30%;
+            width: 40%;
+        }
+
+        .title1 {
+            margin-left: 30%;
+            margin-top: 12%;
+            width: 40%;
+        }
+
+        .title2 {
+            margin-left: 5%;
+            margin-top: 35%;
+            width: 40%;
+        }
+}
+
+.content {
+    text-align: center;
 }

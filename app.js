@@ -1,7 +1,9 @@
 $(document).ready(function() {
-    $(".alcatraz").mouseenter(function() {
-        $(".caption").show();
-        $(this).addClass('overlay');
+    $(".image").mouseover(function() {
+        $(this).next(".caption").fadeIn();
+    });
+    $(".image").mouseleave(function() {
+        $(this).next(".caption").hide();
     });
     
 });
