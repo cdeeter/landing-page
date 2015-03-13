@@ -1,0 +1,111 @@
+body {
+    font-family: helvetica;
+    margin: auto;
+}
+
+.logo {
+    margin-left: 150px;
+}
+
+.navbar, .dropdown {
+    margin-top: -50px;
+}
+
+.header-title {
+    margin-left: 25px;
+    font-family: times new roman;
+    font-style: italic;
+    font-weight: bold;
+    color: #bbb;
+}
+
+.glyphicon-grain {
+    color: black;
+}
+
+#carousel {
+    margin-top: 50px;
+}
+
+.carousel-inner {
+    margin: auto;
+    height: 450px;
+    width 100%;
+    color: white;
+    text-align: center;
+}
+
+.img {
+    margin: auto;
+    height: 500px;
+    width: 900px;
+}
+
+#first-slide {
+    background-color: black;
+    height: 500px;
+    margin-top: -50px;
+}
+
+.second-slide {
+    background-color: black;
+    height: 500px;
+    margin-top: -50px;
+}
+
+.third-slide {
+    background-color: black;
+    height: 500px;
+    margin-top: -50px;
+}
+
+.title {
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 400px;
+    font-family: times new roman;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.left-col, .middle-col, .right-col {
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    width: 60px;
+}
+.navbar {
+    width: 50%;
+}
+
+.navbar-form {
+    margin-right: -1%;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        width: 200px;
+    }
+}
+
+.alcatraz {
+    height: 200px;
+    width: 300px;
+}
+
+.caption {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin-top: -25px;
+    display: none;
+}
+
+.overlay {
+    background:rgba(0,0,0,.75);
+    opacity:0;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+}
