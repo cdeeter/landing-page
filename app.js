@@ -6,4 +6,5 @@ $(document).ready(function() {
         $(this).next(".caption").hide();
     });
     
+    $("#myCarousel").carousel();
 });

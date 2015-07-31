@@ -1,13 +1,9 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 body {
-    font-family: helvetica;
-    margin: auto;
-    background-color: #f8f8f8;
-}
-
-.logo {
-    margin-left: 150px;
+    background-color: #f4f4f2;
+    font-family: "helvetica neue",Helvetica,Arial,Verdana,sans-serif;
+    color: #444;
 }
 
 .navbar, .dropdown {
@@ -20,81 +16,189 @@ body {
     font-weight: bold;
 }
 
-.glyphicon-grain {
-    color: black;
+.container-fluid {
+    margin: auto;
+    width: 80%;
 }
 
-#carousel {
+.page-header {
+    padding-top: 20px;
+}
+
+.logo {
+    height: 100px;
+    width: 150px;
+    float: left;
+}
+
+.menu li {
+    display: inline;
+    list-style: none;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.menu li a {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
     margin-top: 50px;
+    color: #666;
+    text-decoration: none;
 }
 
-.carousel-inner {
-    margin: auto;
-    height: 450px;
-    width 100%;
-    color: white;
-    text-align: center;
+h2 b {
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
-.img {
-    margin: auto;
-    height: 500px;
-    width: 100%;
+.menu-divider {
+    margin-top: -25px;
+    border-top: 4px solid #990000;
 }
 
-#first-slide {
-    background-color: black;
-    height: 500px;
-    margin-top: -50px;
+section {
+    padding: 25px 0px 25px;
 }
 
-.second-slide {
-    background-color: black;
-    height: 500px;
-    margin-top: -50px;
+#features {
+    height: 400px;
 }
 
-.third-slide {
-    background-color: black;
-    height: 500px;
-    margin-top: -50px;
-}
-
-.title, .title1, .title2 {
+.shadow {
     position: absolute;
-    width: 425px;
-    margin-left: 55%;
-    margin-top: 300px;
-    font-family: times new roman;
-    font-style: italic;
-    font-weight: bold;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 2px 25px 25px -2px rgba(143,143,143,.5);
+    -moz-box-shadow: 2px 25px 25px -2px rgba(143,143,143,.5);
+    box-shadow: 2px 20px 25px -2px rgba(143,143,143,.5);
+    height: 250px;
+    border-bottom: 2px solid #C6C6C4;
+    z-index: -1;
 }
 
-.title1 {
-    margin-left: 32%;
-    margin-top: 160px;
+.slider-background, .slider-container {
+    position: absolute;
+    display: block;
+    margin-left: 2%;
+    margin-top: 250px;
 }
 
-.title2 {
-    margin-left: 50px;
-    margin-top: 275px;
-    width: 400px;
+.slider-background {
+    width: 75%;
+    height: 130px;
+    background-color: #D8D8D8;
+    border: 1px solid #C7C7C6;
+    -webkit-box-shadow: 0px 40px 60px 0px rgba(143,143,143,.5);
+    -moz-box-shadow: 0px 40px 60px 0px rgba(143,143,143,.5);
+    box-shadow: 0px 40px 60px 0px rgba(143,143,143,.5);
+    z-index: -2;
+}
+
+.slider-container {
+    width: 73%;
+    left: 12.33%;
+    margin-top: -10px;
+    height: 375px;
+    z-index: 5;
+    background-color: #DDDDDC;
+    -webkit-box-shadow: 0px 20px 45px 0px rgba(143,143,143,.5);
+    -moz-box-shadow: 0px 20px 45px 0px rgba(143,143,143,.5);
+    box-shadow: 0px 20px 45px 0px rgba(143,143,143,.5);
+}
+
+form {
+    width: 350px;
+	font-size: 20px;
+}
+
+#submit {
+	background-color: #990000;
+    color: white;
+	height: 30px;
+	width: 100px;
+	font-size: 18px;
+	display: inline;
+    border-radius: 4px;
+}
+
+#reset {
+	background-color: #990000;
+    color: white;
+	height: 30px;
+	width: 100px;
+	font-size: 18px;
+	display: inline;
+    border-radius: 4px;
+}
+
+input {
+    width:375px;
+    display:block;
+    border: 1px solid #999;
+    height: 25px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    width:375px;
+    display:block;
+    border: 1px solid #999;
+    height: 200px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-description {
+    width: 45%;
+    padding: 25px;
+    float: left;
+}
+
+.carousel-img {
+    background-color: white;
+    border: 1px solid #C7C7C6;
+    width: 50%;
+    max-height: 250px;
+}
+
+#myCarousel {
+    height: 100%;
+    padding: 25px;
+}
+
+.carousel-control {
+    margin-top: 15%;
+    height: 75px;
+    background: transparent;
+    font-size: 75px;
+}
+
+.left {
+    margin-left: -110px;
+}
+
+.right {
+    margin-right: -110px;
+}
+
+.carousel-indicators li {
+    background: #D7D8D6;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.4);
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.4);
 }
 
 .left-col, .middle-col, .right-col {
     text-align: center;
 }
 
-ul li {
-    display: inline;
-    width: 60px;
-}
-.navbar {
-    width: 50%;
-}
-
-.navbar-form {
-    margin-right: -1%;
+.signup-form {
+    width: 375px;
+    margin-left: 30%;
 }
 
 @media (max-width: 991px) {
@@ -102,7 +206,6 @@ ul li {
         width: 200px;
     }
 }
-
 
 .image, .pic {
     height: 250px;
